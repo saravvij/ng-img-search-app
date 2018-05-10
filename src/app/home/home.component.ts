@@ -1,7 +1,6 @@
-import { ImageSearchResponse } from './../models/ImageSearchResponse';
-import { Item } from './../models/Item';
 import { Component, OnInit } from '@angular/core';
 import { ImageSearchService } from '../services/image-search-service';
+import { Item } from './../models/Item';
 
 @Component({
   selector: 'app-home',

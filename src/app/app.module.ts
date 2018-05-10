@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { NgModule } from '@angular/core';
@@ -11,6 +11,8 @@ import { ImageListComponent } from './image-list/image-list.component';
 import { ImageItemComponent } from './image-item/image-item.component';
 import { HomeComponent } from './home/home.component';
 import { ImageSearchService } from './services/image-search-service';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -19,12 +21,15 @@ import { ImageSearchService } from './services/image-search-service';
     SearchBarComponent,
     ImageListComponent,
     ImageItemComponent,
-    HomeComponent
+    HomeComponent,
+    ContactUsComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ImageSearchService],
   bootstrap: [AppComponent]

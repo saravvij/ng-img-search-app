@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="signupForm" >
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" name="name" formControlName="fullname">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" name="email" formControlName="email">
+      <!--<span *ngIf="!signupForm.get('email').valid && signupFom.get('email').touched">
+        Please enter valid mail.
+      </span>-->
+    </div>
+    <div>
+      <label for="phone">Phone:</label>
+      <input type="text" name="phone" formControlName="phone">
+    </div>
+    <button type="submit">Sign Up</button>
+  </form>
+  

@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()" #contactUsForm='ngForm' >
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" name="name" required ngModel>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" name="email" email ngModel>
+  </div>
+  <div>
+    <label for="phone">Phone:</label>
+    <input type="text" name="phone" required ngModel>
+  </div>
+  <button type="submit">Contact Us</button>
+</form>
